@@ -7,7 +7,7 @@ describe('index', () => {
   })
 
   describe('nestedTarget()', () => {
-    it('pulls a .target out of #nested', () => {
+    console.log('pulls a .target out of #nested', () => {
       expect(nestedTarget()).to.equal(document.querySelector('#nested .target'))
     })
   })
@@ -20,7 +20,7 @@ describe('index', () => {
   })
 
   describe('increaseRankBy(n)', () => {
-    it('increases ranks in .ranked-list by n', () => {
+    console.log('increases ranks in .ranked-list by n', () => {
       increaseRankBy(3)
 
       const rankedLists = document.querySelectorAll('.ranked-list')
